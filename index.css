@@ -8,7 +8,7 @@ body {
         'section section section section'
         'section section section section'
         'footer footer footer footer';
-    grid-template-rows: 100px 1fr 1fr 1fr 1fr 30px;
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr 30px;
 }
 
 header,
@@ -22,8 +22,6 @@ header {
     background: rgb(151, 221, 151);
     display: flex;
     justify-content: space-between;
-    padding-left: 50px;
-    padding-top: 30px;
     top: 0;
 
 }
@@ -104,12 +102,10 @@ a {
     height: 350px;
     width:350px;
     /* animation:spinner 2s linear infinite;   */
+     box-shadow: 0px 14px 32px 0px #333;
 }
 .image img{
     border-radius: 50%;
-    
-
-
 }
 
 .Education {
@@ -207,6 +203,7 @@ a {
     border: 1px solid black;
     border-radius: 22px;
     background: radial-gradient(circle, red, black);
+    
 }
 
 .Technical_Skills {
@@ -241,7 +238,6 @@ a {
 .Soft_Skills img {
     padding-left: 100px;
     border-radius: 20px;
-
 }
 
 .Technical_Skills h1 {
