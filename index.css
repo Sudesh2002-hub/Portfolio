@@ -1,0 +1,303 @@
+body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-areas: 'header headerheader header'
+        'section section section section'
+        'section section section section'
+        'section section section section'
+        'section section section section'
+        'footer footer footer footer';
+    grid-template-rows: 100px 1fr 1fr 1fr 1fr 30px;
+}
+
+header,
+section,
+footer {
+    background-color: white;
+}
+
+header {
+    grid-area: 'header';
+    background: rgb(151, 221, 151);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-top: 30px;
+    top: 0;
+
+}
+
+section {
+    grid-area: 'section';
+    background-color: gainsboro;
+}
+
+footer {
+    grid-area: 'footer';
+    background: linear-gradient(to top, white, blue, aqua);
+}
+
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 30px;
+    color: blue;
+    font-weight: bolder;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+}
+
+.navbar li {
+    display: inline;
+    flex-direction: row;
+    padding: 20px;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover {
+    color: rgb(241, 203, 33);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.Home {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .p {
+    border: 5px solid red;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    /* border-top: 6px solid goldenrod; 
+    border-radius: 50%;
+    animation:  spinner   ;
+} */
+
+
+
+@keyframes spinner{
+         0% {
+            transform: rotate(0deg)
+         }  
+        100% {
+            transform: rotate(360deg)
+        }
+}
+.Container {
+    border-radius: 50%; 
+     border: 5px solid black;
+    height: 350px;
+    width:350px;
+    /* animation:spinner 2s linear infinite;   */
+}
+.image img{
+    border-radius: 50%;
+    
+
+
+}
+
+.Education {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 1px solid black;
+    border-radius: 22px;
+    background: radial-gradient(circle, red, black);
+}
+
+.sslc {
+    border: 2px solid black;
+    margin: 10px;
+    background: linear-gradient(to left, aqua, whitesmoke);
+
+}
+
+.sslc h1 {
+    color: blue;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.sslc p {
+    font-family: "Red Rose", serif;
+    text-align: justify;
+    font-weight: bold;
+    word-spacing: 2px;
+}
+
+.Hsc {
+    border: 2px solid black;
+    margin: 10px;
+    background: linear-gradient(to left, aqua, whitesmoke);
+}
+
+.Hsc h1 {
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.Hsc p {
+    font-family: "Red Rose", serif;
+    text-align: justify;
+    font-weight: bold;
+    word-spacing: 2px;
+}
+
+.HI {
+    border: 2px solid black;
+    margin: 10px;
+    background: linear-gradient(to left, aqua, whitesmoke);
+}
+
+.HI h1 {
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.HI p {
+    font-family: "Red Rose", serif;
+    text-align: justify;
+    font-weight: bold;
+    word-spacing: 2px;
+}
+
+.IT {
+    border: 2px solid black;
+    margin: 10px;
+    background: linear-gradient(to left, aqua, whitesmoke);
+}
+
+.IT h1 {
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.IT p {
+    font-family: "Red Rose", serif;
+    text-align: justify;
+    font-weight: bold;
+    word-spacing: 2px;
+}
+
+.Skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid black;
+    border-radius: 22px;
+    background: radial-gradient(circle, red, black);
+}
+
+.Technical_Skills {
+    border: 2px solid black;
+    margin: 10px;
+    background: linear-gradient(to left, aqua, whitesmoke);
+}
+
+.Technical_Skills img {
+    padding-left: 170px;
+}
+
+.Soft_Skills {
+    border: 2px solid black;
+    margin: 10px;
+    background: linear-gradient(to left, aqua, whitesmoke);
+}
+
+.Soft_Skills h1 {
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* .Soft_Skills p {
+    font-family: "Red Rose", serif;
+    text-align: justify;
+    font-weight: bold;
+    word-spacing: 2px;
+} */
+.Soft_Skills img {
+    padding-left: 100px;
+    border-radius: 20px;
+
+}
+
+.Technical_Skills h1 {
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.Technical_Skills p {
+    font-family: "Red Rose", serif;
+    text-align: justify;
+    font-weight: bold;
+    word-spacing: 2px;
+}
+
+.Contact {
+    border: 2px solid black;
+    border-radius: 20px;
+    background: radial-gradient(circle, BLUE, rgb(12, 212, 238), rgb(16, 104, 199));
+    display: flex;
+}
+
+.My_Information {
+    border: 2px solid black;
+    margin: 10px;
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    width: 500px;
+    font-weight: bold;
+    font-family: "Red Rose", serif;
+    padding-top: 50px;
+}
+
+.Phone,
+.Email,
+.Name {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.Input {
+    border: 2px solid black;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    padding-left: 400px;
+    padding-top: 50px;
+    justify-content: center;
+    flex-direction: column;
+    width: 560px;
+}
+
+.media {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+}
